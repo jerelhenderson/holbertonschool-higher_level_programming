@@ -1,0 +1,26 @@
+import module:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+add two ints:
+>>> add_integer(1, 1)
+    2
+
+add two floats:
+>>> add_integer(11.11, 11.11)
+    22.22
+
+add one int, one float:
+>>> add_integer(15, 4.6)
+    19
+
+wrong type(a):
+>>> add_integer("test", 100)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+wrong type(b):
+>>> add_integer(100, "test")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer

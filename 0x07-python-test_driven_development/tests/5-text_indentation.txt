@@ -1,0 +1,14 @@
+import module:
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Say my name:
+>>> text_indentation("Say my name, say my name. When no one is around you, say baby I love you, if you ain't runnin' game.")
+Say my name, say my name.
+<BLANKLINE>
+When no one is around you, say baby I love you, if you ain't runnin' game.
+<BLANKLINE>
+
+Can't say my name:
+>>> text_indentation(1)
+    Traceback (most recent call last):
+    TypeError: text must be a string

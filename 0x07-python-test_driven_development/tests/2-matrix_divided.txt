@@ -1,0 +1,33 @@
+import module:
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+matrix of integers:
+>>> matrix = [[2, 4, 6], [200, 400, 600], [20, 40, 60]]
+
+matrix divided by:
+>>> matrix_divided(matrix, 2)
+[[1.0, 2.0, 3.0], [100.0, 200.0, 300.0], [10.0, 20.0, 30.0]]
+
+division by 0:
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+div is not a number:
+>>> matrix_divided([[2, 4, 6], [8, 10, 12]], "number")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+varied matrix lengths:
+>>> matrix_divided([[2, 4, 6], [8, 10]], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
+
+string in matrix:
+>>> matrix_divided(["string"], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats

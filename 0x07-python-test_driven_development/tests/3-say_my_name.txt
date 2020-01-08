@@ -1,0 +1,25 @@
+import module:
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Artist Name:
+>>> say_my_name("Destiny's", "Child")
+My name is Destiny's Child
+
+Incorrect Artist Name:
+>>> say_my_name("Destiny's", 0110001101101000011010010110110001100100)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+Incorrect Artist Name:
+>>> say_my_name(010001000110010101110011011101000110100101101110011110010010011101110011,
+    "Child")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+Totally Incorrect Name:
+>>> say_my_name(["Spice"], Girls)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
