@@ -1,11 +1,17 @@
 #!/usr/bin/python3
+"""
+Module: Base
+base.by - other classes may inherit from this Base class
+"""
 import json
 
 
 class Base:
+    """ Class: Base """
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """ Initialization method """
         if id is not None:
             self.id = id
         else:
@@ -14,6 +20,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """ returns JSON string repr. of object """
         if list_dictionaries is None:
             return []
         else:
@@ -21,6 +28,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """ writes JSON string repr. of object """
         new_list = []
         filename = "{}.json".format(cls.__name__)
 
@@ -34,6 +42,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """ returns list of JSON string repr. of object """
         if json_string is None:
             return []
         else:
@@ -41,6 +50,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """ returns instance with all attributes of object set """
         from models.rectangle import Rectangle
         from models.square import Square
 
@@ -53,6 +63,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """ returns list of instances """
         new_list = []
         filename = "{}.json".format(cls.__name__)
 
