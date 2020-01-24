@@ -4,7 +4,7 @@ Test Module: Base
 test_base.py - unittests for 'Base'
 """
 import unittest
-from models.base import Rectangle
+from models.base import Base
 from models.square import Square
 from models.rectangle import Rectangle
 
