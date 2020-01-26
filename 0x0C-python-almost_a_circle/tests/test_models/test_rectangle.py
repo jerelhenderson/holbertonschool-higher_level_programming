@@ -22,5 +22,6 @@ class test_rectangle(unittest.TestCase):
 
     def test_rectangle_neg(self):
         """ test negative instance """
-        r1 = Rectangle(-1, -1)
-        self.assertEqual(ValueError, Rectangle, -1, -1)
+        with self.assertRaises(ValueError) as err:
+            s1 = Rectangle(-1, -1)
+            self.assertEqual(str(err.exception), "width must be > 0")
