@@ -13,12 +13,12 @@ class test_rectangle(unittest.TestCase):
     def test_rectangle_fst(self):
         """ test first instance """
         r1 = Rectangle(1, 1)
-        self.assertEqual(Rectangle, 1, 1)
+        self.assertEqual(1, 1)
 
     def test_rectangle_upd(self):
         """ test instance update """
         r1 = Rectangle(2, 2)
-        self.assertEqual(Rectangle, 2, 2)
+        self.assertEqual(2, 2)
 
     def test_rectangle_neg(self):
         """ test negative instance """
