@@ -25,4 +25,4 @@ class test_square(unittest.TestCase):
         """ test negative instance """
         with self.assertRaises(ValueError) as err:
             s1 = Square(-1)
-            self.assertEqual(str(err.exception), "width must be > 0"
+            self.assertEqual(str(err.exception), "width must be > 0")
