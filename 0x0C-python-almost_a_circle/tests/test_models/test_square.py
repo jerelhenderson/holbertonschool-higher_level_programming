@@ -26,3 +26,8 @@ class test_square(unittest.TestCase):
         with self.assertRaises(ValueError) as err:
             s1 = Square(-1)
             self.assertEqual(str(err.exception), "width must be > 0")
+            
+    def test_square_area(self):
+        """ test instance area """
+        s1 = Square(3)
+        self.assertEqual(s1.area(), 9)

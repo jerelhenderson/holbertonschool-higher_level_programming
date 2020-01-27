@@ -37,7 +37,7 @@ class Square(Rectangle):
 
         for arg in range(len(args)):
             for attr in range(len(attrs)):
-                setattr(self, attrs[attr], args[arg])
+                setattr(self, attrs[arg], args[arg])
 
         if kwargs is None:
             pass

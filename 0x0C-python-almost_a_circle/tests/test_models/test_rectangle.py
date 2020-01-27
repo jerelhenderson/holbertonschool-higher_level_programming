@@ -25,3 +25,8 @@ class test_rectangle(unittest.TestCase):
         with self.assertRaises(ValueError) as err:
             s1 = Rectangle(-1, -1)
             self.assertEqual(str(err.exception), "width must be > 0")
+
+    def test_rectangle_area(self):
+        """ test instance area """
+        r1 = Rectangle(1, 2)
+        self.assertEqual(r1.area(), 2)
