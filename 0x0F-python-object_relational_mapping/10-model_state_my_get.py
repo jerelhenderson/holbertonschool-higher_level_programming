@@ -7,6 +7,7 @@ from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+found = argv[4]
 found_obj = 0
 
 
