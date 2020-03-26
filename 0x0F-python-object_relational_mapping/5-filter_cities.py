@@ -5,6 +5,8 @@ list all `cities` of a state
 import MySQLdb
 from sys import argv
 
+split = 0
+
 
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
@@ -18,8 +20,9 @@ if __name__ == "__main__":
     for states in cur.fetchall():
         if states[1] == argv[4]:
             print(states)
-        else:
-            print(', ', end="")
+            split = 1
+    if split is not 0:
+        print("")
 
     cur.close()
     db.close()
