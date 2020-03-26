@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """
-list all `cities` of a state
+list all `cities` of a state from database
 """
 import MySQLdb
 from sys import argv
 
-split = 0
 
+split = 0
 
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
-                         passwd=argv[2], db=argv[3],charset="utf8")
+                         passwd=argv[2], db=argv[3], charset="utf8")
 
     cur = db.cursor()
     cur.execute("SELECT cities.name, states.name \

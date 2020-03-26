@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC",
-                   (argv[4],))
+                (argv[4],))
 
     for states in cur.fetchall():
         print(states)
