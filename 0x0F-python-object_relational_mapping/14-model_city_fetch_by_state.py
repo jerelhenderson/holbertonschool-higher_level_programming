@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """
-prints all `State` object with 'name' from database
+create a class definition 'City'
 """
 from model_state import Base, State
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-found = argv[4]
-found_obj = 0
+new_state = "New Mexico"
 
 
 if __name__ == "__main__":
@@ -18,11 +17,10 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    for result in session.query(State).order_by(State.id):
-        if result.name == found:
-            found_obj = found_obj + 1
-            print("{}".format(result.id))
-        else:
-            print("Not found")
+    for city in session.query(State, City).filter(City.state_id \
+                                                  == State.id):
+        print ("{}: ({}) {}".format(city[0].name, \
+                                     city[1].id, \
+                                     city[1].name))
 
     session.close()
