@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
-lists all `State` objects from database
+adds `State` object "Louisana" to database
 """
 from model_state import Base, State
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
@@ -14,10 +15,8 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    if session.query(State).order_by(State.id).first() is None:
-        print("Nothing")
-    else:
-        print("{}: {}".format(session.query(State).first().id,
-                              session.query(State).first().name))
+    session.add(State(name="Louisana"))
+    session.commit()
+    print ("{}".format(session.query(State).order_by(State.id.desc()).first()))
 
     session.close()

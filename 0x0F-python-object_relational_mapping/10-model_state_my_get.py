@@ -7,9 +7,9 @@ from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+
 found = argv[4]
 found_obj = 0
-
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
@@ -19,9 +19,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     for result in session.query(State).order_by(State.id):
-        if found in result.name:
+        if result.name == found:
             found_obj = found_obj + 1
-            print("{}".format(found.id))
+            print("{}".format(result.id))
         else:
             print("Not found")
 
