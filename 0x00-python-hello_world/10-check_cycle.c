@@ -20,7 +20,7 @@ int check_cycle(listint_t *list)
 
 	while (func_head->next != NULL)
 	{
-		func_trav = func_headcd->next;
+		func_trav = func_head->next;
 		while (func_trav->next != NULL)
 		{
 			if (func_head->next == func_trav->next)
