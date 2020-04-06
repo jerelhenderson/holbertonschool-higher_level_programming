@@ -27,3 +27,4 @@ def find_peak(list_of_integers):
         elif nums[mid + 1] >= nums[mid]:
             mid = mid + 1
             big = mid
+    return
