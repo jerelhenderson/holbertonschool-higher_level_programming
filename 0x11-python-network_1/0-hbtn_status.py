@@ -11,4 +11,4 @@ if __name__ == "__main__":
         print ("Body response:")
         print ("\t- type: {}".format(type(url)))
         print ("\t- content: {}".format(url))
-        print ("\t- utf8 contet: {}".format(url.decode('utf8')))
+        print ("\t- utf8 content: {}".format(url.decode('utf8')))

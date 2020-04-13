@@ -1,18 +1,12 @@
 #!/usr/bin/python3
-"""
-take and send request to URL and display body of response
-"""
-from urllib import request, parse
-from urllib import error
+"""requests URL and displays body; display HTTP status code"""
+import requests
 from sys import argv
 
 
-if __name__ == "__main__":
-    url = argv[1]
-    req = request.Request(url)
-
-    try:
-        with request.urlopen(url) as response:
-            print(response.read().decode("utf8"))
-    except urllib.error.HTTPerror as error:
-        print("Error code: {}".format(error.code))
+if __name__ == '__main__':
+    req = requests.get(argv[1])
+    if req.status_code > 399:
+        print('Error code: {}'.format(req.status_code))
+    else:
+        print(req.text)
