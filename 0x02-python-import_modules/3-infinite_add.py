@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from sys import argv
+from sys import argv
 
-    args = len(argv) - 1
+
+if __name__ == "__main__":
+    args = len(argv)
+    i = 1
     sum = 0
 
-    if args == 0:
-        print ("0")
+    if args == 1:
+        print (0)
     else:
-        if args > 0:
-            for idx in range(1, args + 1):
-                sum = sum + int(argv[idx])
-            print("{:d}".format(sum))
+        while i < args:
+            sum = sum + int(argv[i])
+            i = i + 1
+        print (sum)
