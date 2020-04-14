@@ -9,4 +9,4 @@ if __name__ in "__main__":
     for i in range(len(dir)):
         if dir[i][0] == '_' and dir[i][1] == '_':
             continue
-        print (dir[i])
+        print(dir[i])
