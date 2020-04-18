@@ -5,8 +5,9 @@ def print_matrix_integer(matrix=[[]]):
     else:
         for i in range(len(matrix)):
             for j in range(len(matrix)):
+                p = matrix[i][j]
                 if matrix[i][j] != matrix[i][-1]:
-                    print("{:s}".format(str(matrix[i][j])), end=" ")
+                    print("{:d}".format(p), end=" ")
                 else:
-                    print("{:s}".format(str(matrix[i][j])), end="")
+                    print("{:d}".format(p), end="")
                     print("")
