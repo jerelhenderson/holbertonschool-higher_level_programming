@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-def safe_print_list(value=[], x=0):
+def safe_print_list(my_list=[], x=0):
+    i = 0
+
     try:
-        for elem in range(x):
-            print("{:d}".format(value[elem]), end="")
+        while i < x:
+            print("{}".format(my_list[i]), end="")
+            i = i + 1
         print("")
-        return(elem + 1)
+        return i
     except:
         print("")
-
-    return(elem)
+        return i
