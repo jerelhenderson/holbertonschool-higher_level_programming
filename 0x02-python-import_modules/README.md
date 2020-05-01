@@ -13,7 +13,6 @@ This introductory Python programming language project covers
 ### Requirements
 * Ubuntu 14.04 LTS
 * python 3.4
-* gcc 4.8.4
 
 ### File List
 | Program	  | Description						     |
