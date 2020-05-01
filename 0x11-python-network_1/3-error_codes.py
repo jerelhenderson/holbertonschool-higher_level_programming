@@ -6,12 +6,10 @@ from urllib import request, parse, error
 from sys import argv
 
 
-if __name__ = "__main__":
-    url = argv[1]
-
+if __name__ == "__main__":
+    url = request.Request(argv[1])
     try:
-        with request.urlopen(url) as response:
-            print(response.read().decode("utf8"))
-    except:
-        error.HTTPError as error:
-        print("Error code: {}".format(error.code))
+        with request.urlopen(url) as resp:
+            print(resp.read().decode("utf8"))
+    except error.HTTPError as bad:
+        print("Error code: {}".format(bad.code))
