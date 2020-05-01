@@ -8,9 +8,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    url = argv[1]
-    email = {'email]': argv[2]}
-    data = parse.urlencode(email)
-    req = request.Request(argv[1], data)
-    with request.urlopen(req) as response:
-        print (response.read().decode("utf8"))
+    data = parse.urlencode({'email': argv[2]}).encode()
+    req = request.Request(argv[1], data=data)
+    resp = request.urlopen(req).read()
+    print(resp.decode("utf8"))
