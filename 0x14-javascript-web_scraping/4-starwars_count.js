@@ -1,9 +1,8 @@
 #!/usr/bin/node
 let request = require('request');
-let requestURL = 'http://swapi.co/api/films/' + process.argv[2];
 let count = 0;
 
-request.get(requestURL, function (error, response, body) {
+request.get(process.argv[2], function (error, response, body) {
   let code = response.statusCode;
   if (error) {
     console.log(error);
