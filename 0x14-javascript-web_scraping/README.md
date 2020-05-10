@@ -1,5 +1,5 @@
 # Holberton School - Higher Level Programming
-## 0x12 - JavaScript (Web Scraping)
+## 0x14 - JavaScript (Web Scraping)
 
 ### Purpose
 This introductory JavaScript programming language project covers
