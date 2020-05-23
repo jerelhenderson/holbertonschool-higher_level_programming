@@ -13,11 +13,9 @@ This introductory Python programming language project covers
 * python 3.4
 
 ### File List
-| Program         | Description                                   
-           |
-| --------------- |:----------------------------------------------
-----------:|
-| 0-rectangle.py  | class `Rectangle` defines rectangle |
+| Program         | Description |
+|  --------------- |:--------------------------------------------------------:|
+| 0-rectangle.py | class `Rectangle` defines rectangle |
 | 1-rectangle.py | class `Rectangle` defines rectangle by private 
 inst attr `size` |
 | 2-rectangle.py | class `Rectangle` defines rectangle by 1-rectan
