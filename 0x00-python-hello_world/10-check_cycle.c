@@ -1,5 +1,6 @@
 #include "lists.h"
 
+
 /**
  * check_cycle - check for loop in linked list
  *
@@ -8,21 +9,25 @@
  */
 int check_cycle(listint_t *list)
 {
-  listint_t *tmp1;
-  listint_t *tmp2;
+	listint_t *func_head;
+	listint_t *func_trav;
 
-  tmp1 = list;
-  tmp2 = list->next;
+	func_head = list;
+	func_trav = list;
 
-  if (list == NULL)
-    return (0);
+	if (list == NULL)
+		return (0);
 
-  while (tmp2 != NULL)
-    {
-      tmp2 = tmp2->next->next;
-      tmp1 = tmp1->next;
-      if (tmp1 == tmp2)
-	return (1);
-    }
-  return (0);
+	while (func_head->next != NULL)
+	{
+		func_trav = func_head->next;
+		while (func_trav->next != NULL)
+		{
+			if (func_head->next == func_trav->next)
+				return (1);
+			func_trav = func_trav->next;
+		}
+		func_head = func_head->next;
+	}
+	return (0);
 }
