@@ -16,16 +16,12 @@
 | 0x0A-python-inheritance | "Object Oriented Programming: Inheritance" |
 | 0x0B-input_output | "Reading and Writing Files, JSON encoder and decoder" |
 | 0x0C-almost_a_circle | "Review Everything Learned About Python" |
-| 0x0D-structures_typedef | "Structures, typedef" |
-| 0x0E-function_pointers | "Function Pointers" |
-| 0x0F-variadic_functions | "Variadic Functions" |
-| 0x11-singly_linked_lists | "Singly Linked Lists" |
-| 0x12-more_singly_linked_lists | "More Singly Linked Lists" |
-| 0x13-bit_manipulation | "Bit Manipulation" |
-| 0x14-file_io | "File I/O" |
-| 0x16-doubly_linked_lists | "Doubly Linked Lists" |
-| 0x17-dynamic_libraries | "Dynamic Libraries" |
-| 0x19-hash_tables | "Hash Tables" |
-| 0x1B-makefiles | "Makefiles" |
-| 0x1C-binary_trees | "Binary Trees" |
-| 0x1D-search_algorithms | "Search Algorithms" |
+| 0x0D-SQL_introduction | "Basic MySQL Tutorial, DDL and DML, Queries/Subqueries/Functions" |
+| 0x0E-SQL_more_queries | "MySQL New User and Grant Permissions and Joins" |
+| 0x0F-python-object_relation_mapping | "Object-Relational Mapping, SQLAlchemy" |
+| 0x10-python-network_0 | "HyperText Transfer Protocol and cURL" |
+| 0x11-python-network_1 | "Requests" |
+| 0x12-javascript-warm_up | "Writing JavaScript Code, Variables, Data Types, Operators, Functions, Objects and Arrays, and Modern JS" |
+| 0x13-javascript_objects_scopes_closures | "JavaScript Object Basics, Object-Oriented JavaScript, Inheritance and Closures" |
+| 0x14-javascript-web_scraping | "Working with JSON Data, Requests" |
+| 0x15-javascript-web_jquery | "Selectors, GET/SET, Manipulating CSS classes and DOM elements, API, GET/POST, jQuery and Ajax" |
