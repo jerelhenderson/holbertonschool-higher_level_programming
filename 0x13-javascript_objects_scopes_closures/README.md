@@ -30,3 +30,4 @@ This introductory JavaScript programming language project covers
 | 9-logme.js |print number of arguments already printed and new argument value |
 | 10-converter.js | convert number from base10 to base passed as argument |
 | 100-map.js | import array and computes new array |
+| 101-sorted.js | import dictionary of occurrences by user id and compute dictionary of user ids by occurrence |
