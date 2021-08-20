@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 let arg = process.argv.slice(2).map(num => parseInt(num));
 const sortedList = arg.sort((a, b) => a < b);
 
