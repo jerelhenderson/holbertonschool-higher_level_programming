@@ -1,5 +1,5 @@
 # Holberton School - Higher Level Programming
-## 0x12 - JavaScript (Objects, Scopes, and Closures)
+## 0x13 - JavaScript (Objects, Scopes, and Closures)
 
 ### Purpose
 This introductory JavaScript programming language project covers

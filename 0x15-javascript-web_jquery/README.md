@@ -1,11 +1,14 @@
 # Holberton School - Higher Level Programming
-## 0x14 - JavaScript (Web Scraping)
+## 0x15 - JavaScript (Web jQuery)
 
 ### Purpose
-This introductory JavaScript programming language project covers
-* manipulating JSON data
-* using `request` and fetching API
-* reading and writing files using `fs`
+This introductory JavaScript and jQuery programming language project covers
+* selecting HTML elements in JavaScript, jQuery
+* differences between `ID`, `class`, `tag name` selectors
+* modifying, getting, and updating HTML element style
+* modifying the DOM
+* `GET`/`POST` requests with jQuery Ajax
+* listening and binding DOM and user events
 
 ### Requirements
 * Ubuntu 14.04 LTS
