@@ -1,10 +1,9 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-  let length = list.length;
   let backwardsList = [];
 
-  for (let i = length - 1; i >= 0; i--) {
-    backwardsList.push(list[i]);
+  for (let i = 0; list.length !== 0; i++) {
+    backwardsList.push(list.pop());
   }
   return backwardsList;
 };
